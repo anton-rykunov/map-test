@@ -11,5 +11,9 @@ public class Test1 {
         map.put(new Employee("Anton", 27), "second");
         map.put(new Employee("Anton", 24), "third");
         System.out.println(map.size());
+
+        for(Map.Entry<Employee, String> m: map.entrySet()){
+            System.out.println(m.getKey().getAge() + " : " + m.getKey().getName());
+        }
     }
 }
